@@ -9,7 +9,7 @@ dhcp-range={{ net_prefix }}.200,{{ net_prefix }}.250,{{ submask }},12h
 dhcp-option=option:router,{{ gateway }}
 dhcp-option=option:dns-server,{{ dns }}
 dhcp-authoritative
-
+domain={{ domain }}
 #dont use hosts nameservers
 no-resolv
 #use cloudflare as default nameservers, prefer 1^4
